@@ -15,6 +15,6 @@ RUN cd /usr/share/java \
  && curl -o ojdbc10.jar https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc10/19.8.0.0/ojdbc10-19.8.0.0.jar \
  && curl -o mssql-jdbc.jar https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/8.4.1.jre11/mssql-jdbc-8.4.1.jre11.jar \
  && curl -o jtds.jar https://repo1.maven.org/maven2/net/sourceforge/jtds/jtds/1.3.1/jtds-1.3.1.jar \
- && sed -i 's/postgresql-jdbc4 mariadb-java-client hsqldb jtds/jcc jaybird mysql-connector-java mariadb-java-client postgresql ojdbc10 mssql-jdbc jtds/' /usr/bin/sqlline
+ && sed -i 's/postgresql-jdbc4 mariadb-java-client hsqldb jtds/db2jcc jaybird mysql-connector-java mariadb-java-client postgresql ojdbc10 mssql-jdbc jtds/' /usr/bin/sqlline
 
 CMD ["/usr/bin/sqlline"]
